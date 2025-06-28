@@ -7,8 +7,14 @@
 
 update_branch () {
 	echo "Remote branch has changes, pulling"
-	git pull 
-	
+
+	cd /home/pi/Documents
+	rm -rf piWebApp
+
+	git clone https://github.com/Preensie/piWebApp
+
+	cd piWebApp 
+
 	npm install
 
 	# Update deployment
