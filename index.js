@@ -11,12 +11,12 @@ const httpServer = httpInstance.createServer((req, res) => {
 	});
 	readFile(redirectToHtml(`pages/landing`), res)
     }
-    else if (req.url === '/page1') {
+    else if (req.url === '/projectV1') {
         // Write an html response to the client
         res.writeHead(httpStatusInstance.StatusCodes.OK, {
             "Content-Type": "text/html"
         });
-        readFile(redirectToHtml(`pages/page1`), res);
+        readFile(redirectToHtml(`pages/projectV1`), res);
     }
 });
 
