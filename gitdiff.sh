@@ -8,6 +8,12 @@
 update_branch () {
 	echo "Remote branch has changes, pulling"
 	git pull 
+	
+	npm install
+
+	# Update deployment
+	pm2 delete index
+	pm2 start index.js
 }
 
 while :
