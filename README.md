@@ -1,7 +1,5 @@
 # piWebApp
 
-Running locally on a pi, using cloudflare tunnels
+Running locally on a pi, using cloudflare tunnels to expose it to the web
 
-## gitdif
-
-Used to find when the remote branch has updates, will automatically update local branch
+Node and gitdiff.sh are running in pm2, any changes will be pulled automatically so I can work remotely
